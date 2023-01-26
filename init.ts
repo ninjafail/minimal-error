@@ -5,7 +5,7 @@ import { setTimeout } from "timers/promises";
   const executor = await executePuppeteerInsideVM()
   console.log('finished')
 
-  while (1) {
+  for (let i = 0; i<10; i++) {
     await setTimeout(1000)
     await executor.executePuppeteer()
     console.log('finished')

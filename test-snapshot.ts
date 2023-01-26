@@ -4,7 +4,7 @@ const prompt = require("prompt-sync")({ sigint: true });
 
 const FIRECRACKER_BINARY_PATH =
   "/home/florian/programs/firecracker_binary/release-v1.2.0-x86_64/firecracker";
-const START_SNAPSHOT_PATH = "./start_snapshot";
+const START_SNAPSHOT_PATH = "start_snapshot";
 
 (async () => {
   let fcInstance = new FCInstanceControl(FIRECRACKER_BINARY_PATH);

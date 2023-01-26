@@ -106,8 +106,8 @@ export class FCInstanceControl {
   async createSnapshot(snapshotFilePath: string) {
     await this.pauseInstance();
     await this._createSnapshot(
-      snapshotFilePath,
-      `${snapshotFilePath}_mem`,
+      `snapshots/${snapshotFilePath}`,
+      `snapshots/${snapshotFilePath}_mem`,
       "Full"
     );
     await this.resumeInstance();
